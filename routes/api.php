@@ -12,3 +12,4 @@ Route::get('/user', function (Request $request) {
 Route::get('/countries', [CountryController::class, 'index']);
 Route::get('/ports', [PortController::class, 'index']);
 Route::get('/news', [\App\Http\Controllers\Api\NewsController::class, 'index']);
+Route::get('/currency', [\App\Http\Controllers\Api\CurrencyController::class, 'index']);
